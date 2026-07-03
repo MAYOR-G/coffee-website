@@ -30,13 +30,13 @@ const Hero = () => {
                 className="absolute inset-0 w-full h-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               />
-              {/* Subtle Gradient Overlay for text readability without being murky */}
-              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/60 via-transparent to-coffee-dark/30" />
+              {/* Dark Overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/40" />
               
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end items-center pb-32 px-6 text-center text-coffee-light">
+              <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center text-coffee-light">
                 <motion.h1 
-                  className="font-serif text-5xl md:text-7xl font-bold mb-4 tracking-tight drop-shadow-md"
+                  className="font-serif text-6xl md:text-8xl font-extrabold mb-6 tracking-tight drop-shadow-lg"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.8 }}
@@ -44,7 +44,7 @@ const Hero = () => {
                   {slide.headline}
                 </motion.h1>
                 <motion.p 
-                  className="max-w-2xl text-lg md:text-xl font-light mb-8 drop-shadow-md"
+                  className="max-w-2xl text-xl md:text-2xl font-medium mb-10 drop-shadow-md"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.7, duration: 0.8 }}

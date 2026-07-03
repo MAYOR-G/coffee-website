@@ -2,7 +2,7 @@ export const siteContent = {
   hero: {
     slides: [
       {
-        image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2000&auto=format&fit=crop",
+        image: "/images/coffee_hero.png",
         headline: "Coffee, Crafted With Care.",
         subtext: "From carefully sourced beans to beautifully made cups, we create coffee experiences that feel warm, calm, and worth returning to."
       },
